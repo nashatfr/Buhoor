@@ -2,17 +2,7 @@
 <p align="center"><em>An intelligent deep learning system that understands the rhythm of Arabic poetry.</em></p>
 
 
-
-
-
-## 🎥 Demo
-<p align="center">
-  <video src="https://github.com/nashatfr/Buhoor/raw/main/assets/demo.mp4" width="100%" height="auto" autoplay muted loop></video>
-</p>
-https://github.com/nashatfr/Buhoor/raw/main/assets/demo.mp4
-
-
-
+---
 
 
 ## ✨ Why Buhoor?
@@ -23,13 +13,18 @@ Traditionally, identifying a poetic meter is a grueling manual process requiring
 * **4. Matching (المطابقة):** Checking the resulting pattern against the 16 classical Arabic meters.
 **Buhoor eliminates this entire workflow.** You simply enter the raw verse, and the deep learning model skips the manual encoding, instantly identifying the rhythm through its trained "musical ear."
   
-
-
+---
 
 ## 🧠 How it works
 The system reads the input verse as a sequence of characters and learns hidden patterns in Arabic poetic structure using a deep neural network. It then predicts the most likely meter from the classical Arabic **بحور الشعر**.
+---
+
+## 🎥 Demo
+
+https://github.com/nashatfr/Buhoor/raw/main/assets/demo.mp4
 
 
+---
 
 
 ## 🏗️ Model Overview
