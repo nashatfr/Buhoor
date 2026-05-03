@@ -16,7 +16,8 @@ Traditionally, identifying a poetic meter is a grueling manual process requiring
 ---
 
 ## 🧠 How it works
-The system reads the input verse as a sequence of characters and learns hidden patterns in Arabic poetic structure using a deep neural network. It then predicts the most likely meter from the classical Arabic **بحور الشعر**.
+The system reads the input verse as a sequence of characters and learns hidden patterns in Arabic poetic structure using a deep neural network. It then predicts the most likely meter from the classical Arabic meters **بحور الشعر**.
+
 ---
 
 ## 🎥 Demo
