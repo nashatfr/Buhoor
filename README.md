@@ -18,7 +18,9 @@ Traditionally, identifying a poetic meter is a grueling manual process requiring
 ## 🧠 How it works
 The system reads the input verse as a sequence of characters and learns hidden patterns in Arabic poetic structure using a deep neural network. It then predicts the most likely meter from the classical Arabic meters **بحور الشعر**.
 
+
 ---
+
 
 ## 🎥 Demo
 
@@ -36,11 +38,14 @@ The model is built using a **deep learning architecture based on Embedding layer
 * **Dense softmax layer:** Outputs probabilities across all poetic meters.
 
   
-
+---
 
 
 ## 📊 Dataset
 Trained on the **Ashaar Dataset (أشعار)** — a collection of classical Arabic poetry used for learning and evaluating Arabic poetic meters.
+
+
+---
 
 
 ## 📈 Model Performance
@@ -49,6 +54,7 @@ The model was evaluated on a held-out test set in the training notebook:
 This shows that the model is able to reliably classify Arabic poetic meters with high accuracy across different verse patterns.
 
 
+---
 
 
 ## 🚀 Try it yourself
