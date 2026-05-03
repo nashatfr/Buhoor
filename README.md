@@ -2,15 +2,16 @@
 <p align="center"><em>An intelligent deep learning system that understands the rhythm of Arabic poetry.</em></p>
 ---
 ## 🎥 Demo
-https://github.com/nashatfr/Buhoor/raw/main/demo.mp4
+https://github.com/nashatfr/Buhoor/raw/main/assets/demo.mp4
 ---
 ## ✨ Why Buhoor?
-Traditionally, identifying a poetic meter requires four tedious manual steps in *Ilm al-Arud* (علم العروض):
-1. **الكتابة العروضية (Arud Writing):** Rewriting the verse exactly as pronounced (adding hidden letters, removing silent ones).
-2. **الترميز (Symbolization):** Mapping every letter to either a moving (/) or silent (o) state.
-3. **التفاعيل (Poetic Feet):** Grouping these symbols into prosodic units (e.g., *فعولن*, *مفاعيلن*).
-4. **المطابقة (Matching):** Comparing the sequence of feet against the 16 classical Arabic meters.
-**Buhoor eliminates this process.** Simply input the raw Arabic text, and the deep learning model instantly predicts the correct meter by recognizing complex rhythmic patterns automatically.
+Traditionally, identifying a poetic meter requires four tedious manual steps in **Ilm al-Arud (علم العروض)**:
+* **1. الكتابة العروضية (Arud Writing):** Rewriting the verse exactly as pronounced (adding hidden letters, removing silent ones).
+* **2. الترميز (Symbolization):** Mapping every letter to either a moving (/) or silent (o) state.
+* **3. التفاعيل (Poetic Feet):** Grouping these symbols into prosodic units (e.g., *فعولن*, *مفاعيلن*).
+* **4. المطابقة (Matching):** Comparing the sequence of feet against the 16 classical Arabic meters.
+
+**Buhoor eliminates this process entirely.** Instead of performing these manual translations, you simply input the raw Arabic text. The deep learning model instantly predicts the correct meter by recognizing complex rhythmic patterns automatically, bypassing the need for manual symbolization or phonetic rewriting.
 ---
 ## 🧠 How it works
 The system reads the input verse as a sequence of characters and learns hidden patterns in Arabic poetic structure using a deep neural network. It then predicts the most likely meter from the classical Arabic **بحور الشعر**.
@@ -28,6 +29,7 @@ Trained on the **Ashaar Dataset (أشعار)** — a collection of classical Ara
 ## 📈 Model Performance
 The model was evaluated on a held-out test set in the training notebook:
 > 🏆 **Test Accuracy: 94.96%**
+
 This shows that the model is able to reliably classify Arabic poetic meters with high accuracy across different verse patterns.
 ---
 ## 🚀 Try it yourself
