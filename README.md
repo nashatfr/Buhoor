@@ -7,9 +7,8 @@
 ## 🎥 Demo
 
 
-<video width="100%" controls>
-  <source src="https://raw.githubusercontent.com/nashatfr/Buhoor/main/demo.mp4" type="video/mp4">
-</video>
+👉 Watch demo: [Click here](https://github.com/nashatfr/Buhoor/blob/main/demo.mp4)
+
 
 
 ---
