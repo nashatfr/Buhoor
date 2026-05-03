@@ -1,34 +1,41 @@
-> A deep learning model that understands the rhythm of Arabic poetry.
+# 🌙 Buhoor — Arabic Poetry Meter Classifier (بحور الشعر)
+
+> An intelligent deep learning system that understands the rhythm of Arabic poetry.
 
 ---
 
 ## 🎥 Demo
 
-https://github.com/nashatfr/Buhoor/blob/main/demo.mp4
+
+<video width="100%" controls>
+  <source src="https://raw.githubusercontent.com/nashatfr/Buhoor/main/demo.mp4" type="video/mp4">
+</video>
+
 
 ---
 
 ## ✨ What is Buhoor?
 
-**Buhoor** is a deep learning model that analyzes an Arabic verse and predicts its **poetic meter (بحور الشعر)**.
+**Buhoor** is a deep learning system that analyzes an Arabic verse and predicts its **poetic meter (بحور الشعر)**.
 
 In simple terms:
 
-> You enter a verse of Arabic poetry (بيت شعري), and Buhoor instantly identifies its classical meter — like an expert in Arabic prosody (العَروض).
-
-Normally, determining the correct meter requires multiple manual steps:
-
-- Writing the verse  
-- Phonetic pronunciation (التقطيع الصوتي)  
-- Identifying syllable patterns  
-- Matching against classical meters  
-
-**Buhoor replaces all of these steps with a single prediction.**
+> You enter a line of Arabic poetry (بيت شعري), and Buhoor identifies its classical rhythm — just like an expert in Arabic prosody (العَروض).
 
 It is designed to make Arabic poetry analysis:
 - Easier for students  
 - Faster for researchers  
-- More accessible for anyone studying classical Arabic literature
+- Accessible for anyone interested in classical Arabic literature  
+
+---
+
+## 🧠 How it works
+
+The system reads the input verse as a sequence of characters and learns hidden patterns in Arabic poetic structure using a deep neural network.
+
+It then predicts the most likely meter from the classical Arabic **بحور الشعر**.
+
+---
 
 ## 🏗️ Model Overview
 
@@ -45,7 +52,6 @@ The model is built using a **deep learning architecture based on Embedding layer
 
 Trained on the **Ashaar Dataset (أشعار)** — a collection of classical Arabic poetry used for learning and evaluating Arabic poetic meters.
 
----
 
 ## 📈 Model Performance
 
