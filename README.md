@@ -57,33 +57,17 @@ No manual encoding. No prosody expertise required.
 
 ## 🏗️ Model Architecture
 
-Built on a **Bidirectional LSTM** deep learning architecture:
+The model is a `Sequential` network built on **Bidirectional LSTMs**. Each input verse is first passed through an **Embedding layer** (`output_dim=32`) that maps characters into dense vectors. The sequence then flows through **two stacked Bidirectional LSTM layers** (128 units each) — the first returns the full sequence, the second collapses it into a single representation — with **Layer Normalization** and **Dropout (0.3)** applied after each to stabilize training and reduce overfitting. Finally, a **Dense softmax layer** outputs a probability distribution over all meter classes.
 
-```
-Input Verse (raw characters)
-        │
-        ▼
-┌───────────────────┐
-│  Embedding Layer  │  → characters → dense vectors
-└───────────────────┘
-        │
-        ▼
-┌───────────────────────────┐
-│  Bidirectional LSTM × 2   │  → reads verse forwards & backwards
-└───────────────────────────┘
-        │
-        ▼
-┌──────────────────────────────────┐
-│  Layer Normalization + Dropout   │  → stability & regularization
-└──────────────────────────────────┘
-        │
-        ▼
-┌──────────────────────┐
-│  Dense (Softmax)     │  → probabilities over all 16 meters
-└──────────────────────┘
-        │
-        ▼
-   Predicted Meter ✅
+```python
+model = Sequential([
+    Embedding(input_dim=vocab_size, output_dim=32, input_length=max_len),
+    Bidirectional(LSTM(128, return_sequences=True)),
+    LayerNormalization(), Dropout(0.3),
+    Bidirectional(LSTM(128)),
+    LayerNormalization(), Dropout(0.3),
+    Dense(num_classes, activation="softmax")
+])
 ```
 
 ---
