@@ -110,6 +110,8 @@ Buhoor/
 ├── assets/
 │   └── demo.mp4           # Demo video
 └── notebooks/             # Training notebook
+    |__Meter_Classification/-Training_2.ipynb
+    |__preprocessing_poemes_fullpipline.ipynb  
 ```
 
 ---
