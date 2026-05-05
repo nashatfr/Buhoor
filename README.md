@@ -106,6 +106,7 @@ Then open your browser, enter any Arabic verse, and see the predicted meter inst
 ```
 Buhoor/
 ├── app.py                 # Streamlit web app
+|-- models/
 ├── requirements.txt       # Dependencies
 ├── assets/
 │   └── demo.mp4           # Demo video
